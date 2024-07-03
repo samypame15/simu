@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Servicios Jurídicos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="registrationContainer" class="form-container active">
+      <h2>Registro</h2>
+      <form id="registrationForm">
+        <input type="text" id="regName" placeholder="Nombre" required />
+        <input type="text" id="regSurname" placeholder="Apellido" required />
+        <input
+          type="email"
+          id="regEmail"
+          placeholder="Correo Electrónico"
+          required
+        />
+        <input
+          type="password"
+          id="regPassword"
+          placeholder="Contraseña"
+          required
+        />
+        <button type="submit">Registrar</button>
+      </form>
+      <div class="switch-link">
+        <a href="#" id="toLogin">¿Ya tienes una cuenta? Inicia sesión</a>
+      </div>
+    </div>
+
+    <div id="loginContainer" class="form-container">
+      <h2>Inicio de Sesión</h2>
+      <form id="loginForm">
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="Correo Electrónico"
+          required
+        />
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Contraseña"
+          required
+        />
+        <button>
+          <a href="./pages/nuestros servicios.html">Iniciar Sesion</a>
+        </button>
+      </form>
+      <div class="switch-link">
+        <a href="#" id="toRegister">¿No tienes una cuenta? Regístrate</a>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

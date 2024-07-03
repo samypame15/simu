@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Servicios Jurídicos</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">Legal Corp</h1>
+      </header>
+
+      <main>
+        <div class="seccion" id="inicio">
+          <h2>Bienvenido a legal Corp</h2>
+          <p>
+            Es una herramienta, que le permitira a los cuidadanos permite
+            explorar las diferentes opciones disponibles para obtener asistencia
+            legal.
+          </p>
+
+          <button id="btnConsulta">Iniciar consulta</button>
+          <button id="btnDocumento">Solicitar documento</button>
+          <button id="btnRepresentacion">Solicitar representación</button>
+        </div>
+
+        <div class="seccion" id="consulta" style="display: none">
+          <h2>Realice su consulta legal</h2>
+          <p>Seleccione el área legal en la que necesita asesoría:</p>
+          <ul>
+            <li><a href="#civil" class="link">Derecho civil</a></li>
+            <li><a href="#penal" class="link">Derecho penal</a></li>
+            <li><a href="#familiar" class="link">Derecho familiar</a></li>
+            <li><a href="#laboral" class="link">Derecho laboral</a></li>
+          </ul>
+
+          <button class="btnRegresarInicio">Regresar al inicio</button>
+        </div>
+
+        <div class="seccion" id="civil" style="display: none">
+          <h2>Derecho civil</h2>
+          <p>Describa brevemente su caso:</p>
+          <textarea id="txtCasoCivil"></textarea>
+
+          <button id="btnEnviarConsultaCivil">Enviar consulta</button>
+          <button class="btnRegresarConsulta">Regresar a consulta</button>
+        </div>
+
+        <div class="seccion" id="penal" style="display: none">
+          <h2>Derecho penal</h2>
+          <p>Describa brevemente su caso:</p>
+          <textarea id="txtCasoPenal"></textarea>
+
+          <button id="btnEnviarConsultaPenal">Enviar consulta</button>
+          <button class="btnRegresarConsulta">Regresar a consulta</button>
+        </div>
+
+        <div class="seccion" id="familiar" style="display: none">
+          <h2>Derecho familiar</h2>
+          <p>Describa brevemente su caso:</p>
+          <textarea id="txtCasoFamiliar"></textarea>
+
+          <button id="btnEnviarConsultaFamiliar">Enviar consulta</button>
+          <button class="btnRegresarConsulta">Regresar a consulta</button>
+        </div>
+
+        <div class="seccion" id="laboral" style="display: none">
+          <h2>Derecho laboral</h2>
+          <p>Describa brevemente su caso:</p>
+          <textarea id="txtCasoLaboral"></textarea>
+
+          <button id="btnEnviarConsultaLaboral">Enviar consulta</button>
+          <button class="btnRegresarConsulta">Regresar a consulta</button>
+        </div>
+
+        <div class="seccion" id="documento" style="display: none">
+          <h2>Solicitud de documento</h2>
+          <p>Seleccione el tipo de documento que desea solicitar:</p>
+          <ul>
+            <li><a href="#contrato" class="link">Contrato</a></li>
+            <li><a href="#testamento" class="link">Testamento</a></li>
+            <li><a href="#demanda" class="link">Demanda</a></li>
+          </ul>
+
+          <button class="btnRegresarInicio">Regresar al inicio</button>
+        </div>
+
+        <div class="seccion" id="contrato" style="display: none">
+          <h2>Solicitud de contrato</h2>
+          <p>Describa el tipo de contrato que necesita:</p>
+          <textarea id="txtContrato"></textarea>
+
+          <button id="btnEnviarContrato">Enviar solicitud</button>
+          <button class="btnRegresarDocumento">Regresar a documentos</button>
+        </div>
+
+        <div class="seccion" id="testamento" style="display: none">
+          <h2>Solicitud de testamento</h2>
+          <p>Describa los detalles de su testamento:</p>
+          <textarea id="txtTestamento"></textarea>
+
+          <button id="btnEnviarTestamento">Enviar solicitud</button>
+          <button class="btnRegresarDocumento">Regresar a documentos</button>
+        </div>
+
+        <div class="seccion" id="demanda" style="display: none">
+          <h2>Solicitud de demanda</h2>
+          <p>Describa los detalles de la demanda:</p>
+          <textarea id="txtDemanda"></textarea>
+
+          <button id="btnEnviarDemanda">Enviar solicitud</button>
+          <button class="btnRegresarDocumento">Regresar a documentos</button>
+        </div>
+
+        <div class="seccion" id="carta" style="display: none">
+          <h2>carta</h2>
+          <p>
+            Describa los detalles de la su caso, para asesorarlos sobre la
+            accion constitucional a presentar:
+          </p>
+          <textarea id="txtCarta"></textarea>
+
+          <button id="btnEnviarCarta">Enviar solicitud</button>
+          <button class="btnRegresarDocumento">Regresar a documentos</button>
+        </div>
+
+        <div class="seccion" id="representacion" style="display: none">
+          <h2>Solicitud de representación</h2>
+          <p>Describa brevemente el caso en el que necesita representación:</p>
+          <textarea id="txtRepresentacion"></textarea>
+
+          <button id="btnEnviarRepresentacion">Enviar solicitud</button>
+          <button class="btnRegresarInicio">Regresar al inicio</button>
+        </div>
+      </main>
+    </div>
+    <script src="/variaciones.js"></script>
+  </body>
+</html>
