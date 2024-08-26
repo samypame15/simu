@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const botonesDocumento = document.querySelectorAll(".btnRegresarDocumento");
   const links = document.querySelectorAll("a.link");
 
-  // Navegación
   document.getElementById("btnConsulta").addEventListener("click", function () {
     mostrarSeccion("consulta");
   });
@@ -31,14 +30,14 @@ document.addEventListener("DOMContentLoaded", function () {
   botonesConsulta.forEach((boton) => {
     boton.addEventListener("click", function () {
       mostrarSeccion("consulta");
-      alert("consulta enviada");
+      alert("Consulta enviada.");
     });
   });
 
   botonesDocumento.forEach((boton) => {
     boton.addEventListener("click", function () {
       mostrarSeccion("documento");
-      alert("solicitud enviada");
+      alert("Solicitud enviada.");
     });
   });
 
